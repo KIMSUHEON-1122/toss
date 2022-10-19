@@ -398,6 +398,29 @@
         padding: 10px 0;
         white-space: nowrap;
     }
+    .section1_boxcont{
+        width: 100%;
+    }
+    .section1_boxcont_inner{
+        border: none;
+        width: 100%;
+        justify-content: flex-start;
+        height: 270px;
+    }
+    .graphbox{
+        width: 100%;
+        column-gap: 70px;
+    }
+    .warning_wrap p{
+        font-size: 20px;
+    }
+    .asset_type{
+        font-size: 25px;
+    }
+    .stock_chart{
+        margin-left: 0;
+        padding: 10px;
+    }
     .stock_chart_left{
         width: 100%;
     }
@@ -407,7 +430,9 @@
     .stock_chart p{
         font-size: 1.5em;
     }
-  
+    .country{
+        display: none;
+    }
     .buying{
         display: none;
     }
@@ -449,7 +474,7 @@
     .benefits_span_wrap span:first-child{
         color: #787878;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 14px;
     }
     .benefits_span_wrap span:nth-child(2){
         color: #3182F6;
@@ -466,17 +491,30 @@
         font-weight: 500;
         font-size: 18px;
     }
+    .opinion_left h5{
+        font-size: 15px;
+    }
     
-    
-    .footer_top{
-        font-size: 20px;
+    .footer_bottom{
+        padding: 20px 10px 70px 10px;
+    }
+    .footer_top h5{
+        font-size: 14px;
         white-space: nowrap;
+
     }
     .footerbg{
         height: 500px;
     }
     .app_wrap a{
         width: 200px;
+    }
+    .chatbot img{
+        width: 80px;
+        height: 80px;
+    }
+    .chatbot span{
+        font-size: 0;
     }
     
 }
