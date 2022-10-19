@@ -4,6 +4,8 @@
 body{
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 300;
+    position: relative;
+    overflow-x: hidden;
 }
 .logo span{
     font-family: 'Poppins', sans-serif;
@@ -54,6 +56,61 @@ main{
     width: 100%;
     position: relative;
 }
+/* popup */
+.first_popup{
+    position: absolute;
+    height: 100%;
+    top: -105px;
+    left: 0;
+    width: 100%;
+    background-color: #000000cb;
+    z-index: 999999;
+    color: white;
+    font-size: 5vw;
+    font-weight: 800;
+}
+.first_popup_wrap{
+    height: 100vh;
+    width: 1200px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.first_popup_ment{
+    display: inline;
+    vertical-align: middle;
+    border-right: .05em solid white;
+    animation: cursor 0.2s ease infinite;
+}
+.first_popup_app_wrap{
+    height: 200px;
+}
+.first_popup_app_wrap img{
+    width: 17vw;
+    margin-left: 30px;
+
+}
+.first_popup span{
+    position: absolute;
+    font-weight: 200;
+    bottom: 10%;
+    right: 3%;
+    font-size: 20px;
+    text-decoration: underline;
+}
+@keyframes cursor{
+    0%{
+        border-color: white;
+    }
+    100%{
+        border-color: transparent;
+    }
+}
+
     /* header */
 
 .header_top{
@@ -262,7 +319,7 @@ main{
 
 /* section1 */
 .section1_wrap{
-    margin-top: 10%;
+    margin-top: 5%;
     width: 1200px;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -364,13 +421,18 @@ main{
     width: 200px;
 }
 .pie-chart{
-    margin-top: 20px;
+    /* margin-top: 20px;
     display:inline-block;
     position:relative;
     width: 200px;
     height: 200px;
     background: conic-gradient(#e0293860 0% 25%, #00a36060 25% 56%, #3182F660 56% 100%);
+    border-radius: 50%; */
+    display:inline-block;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    transition: 0.3s;
 }
 
 .credit_warning{
@@ -385,6 +447,10 @@ main{
     color: #3182F6;
     white-space: nowrap;
     margin-top: 20px;
+    transition: all 0.4s ease-in;
+}
+.section1_boxcont .tag:hover{
+    background-color: #abd1fa;
 }
 .section1_trycont{
     display: flex;
@@ -503,20 +569,10 @@ main{
 .try_top_wrap, .try_bottom_left, .try_bottom_right{
     position: relative;
 }
-.try_top_wrap::before, .try_bottom_left::before, .try_bottom_right::before{
-    content: "";
-    position: absolute;
-    background-color: rgba(255, 244, 95, 0.616);
-    width : 110%;
-    height: 110%;
-    border-radius: 100px;
-    left: -10px;
-    z-index: -1
-}
+
 .section1_trycont p,.try_top_wrap::before, .try_bottom_left::before, .try_bottom_right::before{
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease;
 }
 
 .try_top_wrap::before, .try_top_wrap p{
@@ -554,6 +610,7 @@ main{
     background-color: #F9FAFB;
     width: 100%;
     margin-top: 50px;
+    overflow: hidden;
 }
 .section2_wrap h3{
     width: 1200px;
@@ -640,9 +697,9 @@ main{
 .stock_chart li{
     border-bottom: 4px solid #78787844;
     padding-bottom: 5px;
+    overflow: hidden;
 }
 .stock_chart p{
-    color: #787878;
     font-weight: 500;
     font-size: 20px;
     margin-left: 10px;
@@ -650,6 +707,21 @@ main{
     display: flex;
     padding-right: 20px;
     padding-bottom: 10px;
+}
+.stock_chart a{
+    color: #787878;
+}
+.stock_chart p > *:not(.heart, .ranking){
+    animation-name: ranking_ani;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes ranking_ani{
+    0%{
+        transform: translateY(100px);    
+    }
 }
 .stock_chart span{
     color: #3182F6;
@@ -721,12 +793,27 @@ main{
     width: 20px;
     top: 18px;
     transform: rotate(45deg);
+    animation-name: lookup_ani;
+    animation-iteration-count: infinite;
+    animation-duration: 0.8s;
+   animation-timing-function: ease-out;
 }
+@keyframes lookup_ani {
+    0%{
+        border-color: white;
+    }
+    40%{
+        border-color: #444;
+    }
+}
+
 .buying a::before{
     right: 40px
 }
 .buying a::after{
     right: 65px;
+    animation-delay: 0.5s;
+
 }
 
 /* section4 */
@@ -783,7 +870,6 @@ main{
     padding: 20px 40px;
     top: 50%;
     border-radius: 100px;
-    
 }
 
 .loan_ment{

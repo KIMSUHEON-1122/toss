@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/loan.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/loanresponsive.css">
+
+
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script defer src="js/main.js"></script>
+
+    <title>토스뱅크 대출 알아보기</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header_wrap">
+        <div class="tablet_popup_wrap display_none">
+            <div class="popup">
+                <img src="img/logo.png" alt="">
+                <a href="" class="popupdown">toss 앱 다운받기</a>
+                <a href="" class="close">오늘은 웹으로 볼게요</a>
+            </div>
+        </div>
+
+        <header>
+            <div class="header_top">
+                <div class="download_wrap">
+                    <select name="download" id="download_site">
+                        <option value="toss_download">토스 앱 다운로드</option>
+                        <option value="google_play">구글플레이</option>
+                        <option value="app_store">앱스토어</option>
+                    </select>
+                </div>
+                <ul>
+                    <li><a>공인인증센터</a></li>
+                    <li><a>private모드로 보기</a></li>
+                </ul>
+            </div>
+            <div class="header_bottom_wrap">
+                <div class="header_bottom">
+                    <a href="index.html" class="logo">
+                        <img src="img/logo.png" alt="">
+                        <span>toss</span>
+                    </a>
+                    <div class="menu_wrap">
+                        <ul>
+                            <li><a href="#">송금</a></li>
+                            <li><a href="#">자산</a></li>
+                            <li><a href="#">소비</a></li>
+                            <li><a href="loan.html">대출</a></li>
+                            <li><a href="#">보험</a></li>
+                            <li><a href="#">카드</a></li>
+                        </ul>
+                    </div>
+                    <div class="customer_type">
+                        <ul>
+                            <li><a href="">개인</a></li>
+                            <li><a href="">사장님</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile_hamburger_wrap display_none"></div>
+                </div>
+            </div>
+
+            <div class="mobile_nav display_none">
+                <div class="mobile_menu_wrap">
+                    <ul>
+                        <li><a href="#">송금</a></li>
+                        <li><a href="#">자산</a></li>
+                        <li><a href="#">소비</a></li>
+                        <li><a href="loan.html">대출</a></li>
+                        <li><a href="#">보험</a></li>
+                        <li><a href="#">카드</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- loan -->
+    <main>
+        <div class="loan_wrap">
+            <div class="loan_title">
+                <h1>대출, 나도 될까?<br>
+                    토스는 당연히 됩니다</h1>
+                <h2>대출 조회하기</h2>
+                <div class="limit_wrap">
+                    <img class = "loanicon" src="img/대출아이콘.png" alt="">
+                    <div class="limit">
+                        <p>김수헌님의 금리와 한도</p>
+                        <div class="won_span_wrap">
+                            <span class="asset_count">?</span>
+                            <span class="won">%</span>
+                            <span class="asset_count">????</span>
+                            <span class="won">원</span>
+                        </div>
+                    </div>
+                    <img src="img/womanloan.svg" class = "woman" alt="">
+                </div>
+                <a href="" class="lookup">1분만에 조회하기</a>
+            </div>
+            <div class="loan_main">
+                <h3>원하는 상품만 조회하기</h3>
+                <div class="main_tab_wrap">
+                    <div class="tab_left">
+                        <ul>
+                            <li>
+                                <img src="img/신용대출.png" alt="">
+                                <a href="#">신용대출</a>
+                            </li>
+                            <li>
+                                <img src="img/부동산.png" alt="">
+                                <a href="#">주택전세자금대출</a>
+                            </li>
+                            <li>
+                                <img src="img/사장님.png" alt="">
+                                <a href="#">사장님대출</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab_right">
+                        <div class="tossbank">
+                            <a href="" class="loan_tag">신용대출</a>
+                            <h4>토스뱅크 신용대출</h4>
+                            <p>
+                                목돈이 필요할때<br>
+                                유용하게
+                            </p>
+                            <video class="loanvideo" loop="" autoplay="" muted="" playsinline="" poster="">
+                                <source src="video/video-01.mp4">
+                            </video>
+                        </div>
+                        <div class="salary">
+                            <h4>급여소득자 대출</h4>
+                            <p>최대한도<br>
+                                2억7,000만원까지
+                            </p>
+                            <video class="loanvideo" loop="" autoplay="" muted="" playsinline="" poster="">
+                                <source src="video/video-02.mp4">
+                            </video>
+                        </div>
+                        <div class="between_ston">
+                            <a href="" class="loan_tag">사잇돌대출</a>
+                            <h4>사잇돌 대출</h4>
+                            <p>사회초년생도, <br>
+                                걱정없이
+                            </p>
+                            <img src="img/money-wing.png" class = "loanpng"alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_wrap">
+            <div class = "footer_bottom">
+                <div class="bottom_text">
+                    <h5>㈜비바리퍼블리카</h5>
+                    <p>사업자 등록번호 : 120-88-01280 | 대표 : 이승건<br>
+                        호스팅 서비스 : 주식회사 비바리퍼블리카 | 통신판매업 신고번호 : 2014-서울강남-03377 사업자정보확인<br>
+                        06236 서울특별시 강남구 테헤란로 142, 12층 (역삼동, 아크플레이스)<br>
+                        고객센터 : 서울특별시 강남구 테헤란로 133, 9층 (역삼동, 한국타이어빌딩)
+                    </p>
+                    <div class="terms_wrap">
+                        <ul style="width : 120px">
+                            <li><a href="#">서비스 이용약관</a></li>
+                            <li><a href="#" style="color: #B0B8C1;">개인정보 처리방침</a></li>
+                            <li><a href="#">가맹점 고지사항</a></li>
+                        </ul>
+                        <ul style="width : 170px">
+                            <li><a href="#">통합 금융정보 서비스 약관</a></li>
+                            <li><a href="#" style="color: #B0B8C1;">채용팀 개인정보 처리방침</a></li>
+                            <li><a href="#">토스 전자서명인증업무준칙</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">마이데이터 서비스 이용약관</a></li>
+                            <li><a href="#">영상정보처리기기 운영 관리 방침</a></li>
+                            <li><a href="#">토스 전자인증서비스 약관</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">이용자의 권리 및 유의사항</a></li>
+                            <li><a href="#">위치기반서비스 이용약관</a></li>
+                            <li><a href="#">금융소비자보호</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom_sns">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/facebook.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/blog.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/naver.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/twt.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/insta.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="chatbot">
+            <img src="img/챗봇.gif" alt="">
+            <span>AI 챗봇이<br>
+                도와드립니다
+            </span>
+        </a>
+    </main>
+</body>
+
+</html>

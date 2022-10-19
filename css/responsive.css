@@ -91,7 +91,9 @@
     .circle_graph{
         width: 150px;
     }
-    
+    .graphbox{
+        border-color: transparent;
+    }
     .tag{
         font-size: 14px;
     }
@@ -132,6 +134,10 @@
     }
     .warning_ment{
         display: none;
+    }
+    .stock_genius{
+        position: relative;
+        margin-top: 30px;
     }
     .genius_wrap{
     }
@@ -383,13 +389,14 @@
         opacity: 80%;
         background-color: #60BDB7;
         color: white;
-        font-size: 28px;
+        font-size: 18px;
         font-weight: 500;
         border-radius: 0px;
         display: block;
         letter-spacing : 10px;
         width: 100%;
         padding: 10px 0;
+        white-space: nowrap;
     }
     .stock_chart_left{
         width: 100%;

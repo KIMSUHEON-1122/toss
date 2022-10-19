@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>금융의 모든 것 | 토스</title>
+</head>
+
+<body>
+    <!-- popup -->
+    <div class="first_popup display_none">
+        <div class="first_popup_wrap">
+            <div class="popup_ment_wrap">
+                <p class="first_popup_ment">
+            </div>
+            </p>
+            <div class="first_popup_app_wrap">
+                <a href="#" class="display_none"><img src="img/appstore.svg" alt=""></a>
+                <a href="#" class="display_none"><img src="img/googleplay.svg" alt=""></a>
+            </div>
+            <span class="display_none">오늘은 웹으로 볼게요</span>
+        </div>
+    </div>
+    <!-- header -->
+    <div class="header_wrap">
+        <div class="tablet_popup_wrap display_none">
+            <div class="popup">
+                <img src="img/logo.png" alt="">
+                <a href="" class="popupdown">toss 앱 다운받기</a>
+                <a href="" class="close">오늘은 웹으로 볼게요</a>
+            </div>
+        </div>
+
+        <header>
+            <div class="header_top">
+                <div class="download_wrap">
+                    <select name="download" id="download_site">
+                        <option value="toss_download">토스 앱 다운로드</option>
+                        <option value="google_play">구글플레이</option>
+                        <option value="app_store">앱스토어</option>
+                    </select>
+                </div>
+                <ul>
+                    <li><a>공인인증센터</a></li>
+                    <li><a>private모드로 보기</a></li>
+                </ul>
+            </div>
+            <div class="header_bottom_wrap">
+                <div class="header_bottom">
+                    <a href="index.html" class="logo">
+                        <img src="img/logo.png" alt="">
+                        <span>toss</span>
+                    </a>
+                    <div class="menu_wrap">
+                        <ul>
+                            <li><a href="#">송금</a></li>
+                            <li><a href="#">자산</a></li>
+                            <li><a href="#">소비</a></li>
+                            <li><a href="loan.html">대출</a></li>
+                            <li><a href="#">보험</a></li>
+                            <li><a href="#">카드</a></li>
+                        </ul>
+                    </div>
+                    <div class="customer_type">
+                        <ul>
+                            <li><a href="">개인</a></li>
+                            <li><a href="">사장님</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile_hamburger_wrap display_none"></div>
+                </div>
+            </div>
+
+            <div class="mobile_nav display_none">
+                <div class="mobile_menu_wrap">
+                    <ul>
+                        <li><a href="#">송금</a></li>
+                        <li><a href="#">자산</a></li>
+                        <li><a href="#">소비</a></li>
+                        <li><a href="loan.html">대출</a></li>
+                        <li><a href="#">보험</a></li>
+                        <li><a href="#">카드</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- main -->
+    <main>
+        <div class="card_list_wrap">
+            <span>10월 인기 카드</span>
+            <div class="select_wrap">
+                <select name="card_list">
+                    <option value="1">
+                        1 삼성카드 taptap O
+                    </option>
+                    <option value='2'>
+                        2 신한카드 후불하이패스+(하이패스 전용)
+                    </option>
+                    <option value="3">
+                        3 신한 Hi-Point 카드
+                    </option>
+                    <option value="4">
+                        4 신한카드 YOLO (미니언즈)
+                    </option>
+                    <option value="5">
+                        5 청춘대로 톡톡카드
+                    </option>
+                    <option value="6">
+                        6 탄탄대로 올쇼핑 티타늄카드
+                    </option>
+                    <option value="7">
+                        7 삼성카드 taptap S
+                    </option>
+                    <option value="8">
+                        8 신한카드 B.Big(삑)
+                    </option>
+                    <option value="9">
+                        9 삼성카드 & MILEAGE PLATINUM(스카이패스)
+                    </option>
+                    <option value="10">
+                        10 신한카드 Deep Dream
+                    </option>
+                </select>
+                <img src="" alt="" class="card_img">
+            </div>
+            <a class="card_more">카드 혜택 더 보러가기</a>
+        </div>
+
+        <div class="title_wrap">
+            <div class="video_wrap">
+                <video class="title_video" loop="" autoplay="" muted="" playsinline="" poster="">
+                    <source src="video/walk.mp4">
+                </video>
+            </div>
+            <p>
+                toss가 제안하는<br>
+                걷기 생활의 시작
+            </p>
+            <a href="" class="">
+                토스 만보기 시작하기
+            </a>
+        </div>
+        <!-- slide사용하기 -->
+
+        <p class="remit">
+            <a href="#">어디로 돈을 보낼까요?</a>
+        </p>
+
+        <a href="#" class="chatbot">
+            <img src="img/챗봇.gif" alt="">
+            <span>AI 챗봇이<br>
+                도와드립니다
+            </span>
+        </a>
+
+        <div class="mobile_download_wrap display_none">
+            <a href="#">
+                <img src="img/logo.png" alt="">
+                <span>토스 앱 다운로드 ↓</span>
+            </a>
+        </div>
+
+        <div class="section1_wrap">
+            <section class="section1">
+                <h3>24시간 토스 서비스</h3>
+                <div class="tablet_wrap">
+                    <div class="money_manage_wrap">
+                        <h4>내 돈 관리</h4>
+                        <div class="asset_wrap">
+                            <div class="section1_boxcont">
+                                <div class="section1_boxcont_inner" data-aos="fade-up" data-aos-duration="4000">
+                                    <p>내 자산 모아보기</p>
+                                    <ul>
+                                        <li>
+                                            <span class="asset_type">계&nbsp&nbsp&nbsp좌</span>
+                                            <div class="won_span_wrap">
+                                                <span class="asset_count">???</span>
+                                                <span class="won">원</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="asset_type">투&nbsp&nbsp&nbsp자</span>
+                                            <div class="won_span_wrap">
+                                                <span class="asset_count">???</span>
+                                                <span class="won">원</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="asset_type">포인트</span>
+                                            <div class="won_span_wrap">
+                                                <span class="asset_count">???</span>
+                                                <span class="won">원</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="section1_phoncont" data-aos="fade-up">
+                                <img src="img/assetgroup.png" alt="" class="phone">
+                                <img src="img/touch.png" alt="" class="pinger">
+                            </div>
+                        </div>
+                        <div class="consume_wrap">
+                            <div class="section1_phoncont" data-aos="fade-up">
+                                <img src="img/consumegroup.png" alt="" class="phone">
+                                <img src="img/touch.png" alt="" class="pinger">
+                            </div>
+                            <div class="section1_boxcont">
+                                <div class="section1_boxcont_inner" data-aos="fade-up"
+                                data-aos-duration="4000">
+                                    <p class="this_month">이번달 쓴 금액</p>
+                                    <div class="pie-chart"></div>
+                                    <a href="" class="tag">내 소비 태그 확인하기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="credit_manage_wrap">
+                        <h4>내 신용 관리</h4>
+                        <div class="credit_wrap">
+                            <div class="section1_boxcont">
+                                <div class="section1_boxcont_inner" data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
+                                    <div class="graphbox">
+                                        <div class="my">
+                                            <span class="graph_span">김수헌님</span>
+                                        </div>
+                                        <div class="your">
+                                            <span class="graph_span">20대 여성 평균</span>
+                                        </div>
+                                    </div>
+                                    <p class="mycredit">내 신용 점수보기</p>
+                                    <div class="warning_wrap">
+                                        <img src="img/warning.png" alt="" class="credit_warning">
+                                        <p>내 신용 점수 <br>안전하게 1초만에 확인</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section1_trycont" data-aos="zoom-in-left">
+                                <div class="try_top_wrap">
+                                    <img src="img/creditmanegetip.png" alt="">
+                                    <p>신용점수 관리 Tip!</p>
+                                </div>
+                                <div class="try_bottom">
+                                    <div class="try_bottom_left">
+                                        <img src="img/creditgrade.png" alt="">
+                                        <p>내 신용점수 관리</p>
+                                    </div>
+                                    <div class="try_bottom_right">
+                                        <img src="img/creditup.png" alt="">
+                                        <p>신용등급 올리기</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="section2_wrap">
+            <section class="section2">
+                <h3>토스 PICK!</h3>
+                <div class="pick_wrap">
+                    <div class="pickbox">
+                        <div>
+                            <a href="#"><img src="img/apartment.jpg" alt=""></a>
+                            <a href="#">
+                                <p>토스가 분석한 2023 부동산 전망</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pickbox">
+                        <div>
+                            <a href=""><img src="img/car.jpg" alt=""></a>
+                            <a href="">
+                                <p>안전하게 중고차 고르는 법</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pickbox">
+                        <div>
+                            <a href=""><img src="img/insurance.jpg" alt=""></a>
+                            <a href="">
+                                <p>보험, 많을수록 좋은걸까?</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pickbox">
+                        <div>
+                            <a href=""><img src="img/grandmother.jpg" alt=""></a>
+                            <a href="">
+                                <p>행복한 노후를 맞이하는 방법</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pickbox">
+                        <div>
+                            <a href=""><img src="img/loan.jpg" alt=""></a>
+                            <a href="">
+                                <p>금리, 얼마나 더 오를까?</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="swipe display_none">
+                <img src="img/sw.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="section3_wrap">
+            <h3>토스 증권</h3>
+            <section class="section3">
+                <div class="stock_list">
+                    <div class="country_wrap">
+                        <h4>실시간 인기 주식</h4>
+                        <a href="#" class="country">국내</a>
+                        <a href="#" class="country">해외</a>
+                    </div>
+                    <ul class="stock_chart">
+                        <div class="stock_chart_left">
+                            <li>
+                                <p>
+                                    <span class="ranking">1</span>
+                                    <img src="img/samsung.png" alt="">
+                                    <a>삼성전자</a>
+                                    <object data="img/heart.svg" class="heart display_none" alt=""></object>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="ranking">2</span>
+                                    <img src="img/TSI.png" alt="">
+                                    <a href="">티에스아이</a>
+                                    <object data="img/heart.svg" class="heart display_none" alt=""></object>
+
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="ranking">3</span>
+                                    <img src="img/SillaJen.png" alt="">
+                                    <a href="">신라젠</a>
+                                    <object data="img/heart.svg" class="heart display_none" alt=""></object>
+
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="ranking">4</span>
+                                    <img src="img/kakao.png" alt="">
+                                    <a href="">카카오</a>
+                                    <object data="img/heart.svg" class="heart display_none" alt=""></object>
+
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="ranking">5</span>
+                                    <img src="img/KakaoBank.png" alt="">
+                                    <a href="">카카오뱅크</a>
+                                    <object data="img/heart.svg" class="heart display_none" alt=""></object>
+                                </p>
+                            </li>
+                        </div>
+                        <div class="stock_chart_right">
+                            <li>
+                                <p>
+                                    <span class="ranking">6</span>
+                                    <img src="img/Hyundai.png" alt="">
+                                    <a href="">현대차</a>
+                                    <object data="img/heart.svg" class="heart display_none" alt=""></object>
+
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="ranking">7</span>
+                                    <img src="img/SK Hynix.png" alt="">
+                                    <a href="">SK하이닉스</a>
+                                    <object data="img/heart.svg" class="heart display_none" alt=""></object>
+
+
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="ranking">8</span>
+                                    <img src="img/Naver.png" alt="">
+                                    <a href="">네이버</a>
+                                    <object data="img/heart.svg" class="heart display_none" alt=""></object>
+
+
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="ranking">9</span>
+                                    <img src="img/hybe.png" alt="">
+                                    <a href="">하이브</a>
+                                    <object data="img/heart.svg" class="heart display_none" alt=""></object>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="ranking">10</span>
+                                    <img src="img/TapeX.png" alt="">
+                                    <a href="">테이팩스</a>
+                                    <object data="img/heart.svg" class="heart display_none" alt=""></object>
+                                </p>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="stock_genius">
+                    <h4>주식천재 따라잡기</h4>
+                    <p>먼저 부자가 된 그들의 선택은?</p>
+                    <div class="genius_wrap slider">
+                        <a href="#" class="genius">
+                            <img src="img/Ellipse 1.png" alt="">
+                            <p>빌 게이츠</p>
+                        </a>
+                        <a href="#" class="genius">
+                            <img src="img/Ellipse 2.png" alt="">
+                            <p>워렌 버핏</p>
+                        </a>
+                        <a href="#" class="genius">
+                            <img src="img/Ellipse 3.png" alt="">
+                            <p>레이 달리오</p>
+                        </a>
+                        <a href="#" class="genius">
+                            <img src="img/Ellipse 4.png" alt="">
+                            <p>켄 피셔</p>
+                        </a>
+                    </div>
+                    <div class="swipe display_none">
+                        <img src="img/sw.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <p class="buying">
+                <a href="#">지금 주식천재 따라사기</a>
+            </p>
+        </div>
+
+        <div class="section4_wrap">
+            <section class="section4">
+                <div class="card_ad">
+                    <img src="img/card.png" alt="">
+                    <p>쓰시는 만큼<br>
+                        다 돌려 드릴게요
+                    </p>
+                    <a href="#">전에 없던 카드 혜택 누리기</a>
+                </div>
+                <div class="loan_ad">
+                    <p class="loan_ment">마음 졸이지 마세요.<br>아쉬운 소리 하지 마세요.</p>
+                    <img src="img/비상금.png" alt="">
+                    <p class="loan_type">토스뱅크 비상금 대출</p>
+                    <a href="#">받을 수 있는 비상금 확인하기</a>
+                    <div class="warning_ment">
+                        대출 연체 시 연체 기간에 따라 신용정보회사(10만원 이상 5영업일 이상) 또는 한국신용정보원(3개월 이상)에 연체정보가 공유되며 이로 인해 신용거래에
+                        불이익을 받을 수 있습니다.
+                        대출 신청 시, 고객님의 신용정보 조회 이력이 신용정보회사에 제공되며, 개인의 신용상태에 따라 다른 금융기관의 대출 심사에 영향을 줄 수 있습니다. 또한,
+                        대출이 실행되면 고객님의 부채수준 및 신용상태 등에 따라 신용점수가 하락할 수도 있습니다.
+                        대출 계약기간은 1년이며, 대출기간은 연장하기 위해서는 매년 만기 전에 앱을 통한 연장 신청이 필요합니다.
+                        개인의 신상 및 신용도에 따른 기간연장 심사결과에 따라 대출금의 일부를 상환하게 될 수 있으며, 기간연장이 거절되는 경우 대출잔액 및 미지급 이자 전부를
+                        상환하셔야 합니다.
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="section5_wrap display_none">
+            <section class="section5">
+                <div class="mobile_benefits_wrap">
+                    <h3>혜택</h3>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="img/point.png" alt="">
+                                <div class="benefits_span_wrap">
+                                    <span>내 포인트</span>
+                                    <span id="point_count">206원</span>
+                                </div>
+                                <div class="right_more"></div>
+                            </a>
+                        </li>
+                        <p>포인트 모으기</p>
+                        <li>
+                            <a href="">
+                                <img src="img/빗썸.png" alt="">
+                                <div class="benefits_span_wrap">
+                                    <span>오늘이 지나가기 전에 챙기세요!</span>
+                                    <span id="bit_sign">빗썸 가입만 해도 5,000원</span>
+                                </div>
+                                <div class="right_more"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/만보기.png" alt="">
+                                <div class="benefits_span_wrap">
+                                    <span>만보기</span>
+                                    <span>140원 받기</span>
+                                </div>
+                                <div class="right_more"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/quize.png" alt="">
+                                <div class="benefits_span_wrap">
+                                    <span>행운퀴즈 풀고</span>
+                                    <span>랜덤 금액 받기</span>
+                                </div>
+                                <div class="right_more"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/free.png" alt="">
+                                <div class="benefits_span_wrap">
+                                    <span>토스에서 투자하고</span>
+                                    <span>무료 주식 받기</span>
+                                </div>
+                                <div class="right_more"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/토스카드.png" alt="">
+                                <div class="benefits_span_wrap">
+                                    <span>카드 쓰고</span>
+                                    <span>100,000원 받기</span>
+                                </div>
+                                <div class="right_more"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="opinion display_none">
+            <div class="opinion_left">
+                <img src="img/sun.png" alt="" class="alert">
+                <h5>지금까지 토스 서비스 어땠나요?</h5>
+                <span>의견 보내기</span>
+            </div>
+            <div class="opinion_right">
+                <a href="" class="right_more"></a>
+            </div>
+        </div>
+
+        <div class="footer_wrap">
+            <div class="footer_top">
+                <img src="img/footerbg.jpg" alt="" class="footerbg">
+                <h2>토스를 가장 쉽게 만나는 방법</h2>
+                <div class="appqr_wrap">
+                    <div class="app_wrap">
+                        <a href="#"><img src="img/appstore.svg" alt=""></a>
+                        <a href="#"><img src="img/googleplay.svg" alt=""></a>
+                    </div>
+                    <img src="img/qr.png" alt="" class="qr">
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="bottom_text">
+                    <h5>㈜비바리퍼블리카</h5>
+                    <p>사업자 등록번호 : 120-88-01280 | 대표 : 이승건<br>
+                        호스팅 서비스 : 주식회사 비바리퍼블리카 | 통신판매업 신고번호 : 2014-서울강남-03377 사업자정보확인<br>
+                        06236 서울특별시 강남구 테헤란로 142, 12층 (역삼동, 아크플레이스)<br>
+                        고객센터 : 서울특별시 강남구 테헤란로 133, 9층 (역삼동, 한국타이어빌딩)
+                    </p>
+                    <div class="terms_wrap">
+                        <ul style="width : 120px">
+                            <li><a href="#">서비스 이용약관</a></li>
+                            <li><a href="#" style="color: #B0B8C1;">개인정보 처리방침</a></li>
+                            <li><a href="#">가맹점 고지사항</a></li>
+                        </ul>
+                        <ul style="width : 170px">
+                            <li><a href="#">통합 금융정보 서비스 약관</a></li>
+                            <li><a href="#" style="color: #B0B8C1;">채용팀 개인정보 처리방침</a></li>
+                            <li><a href="#">토스 전자서명인증업무준칙</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">마이데이터 서비스 이용약관</a></li>
+                            <li><a href="#">영상정보처리기기 운영 관리 방침</a></li>
+                            <li><a href="#">토스 전자인증서비스 약관</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">이용자의 권리 및 유의사항</a></li>
+                            <li><a href="#">위치기반서비스 이용약관</a></li>
+                            <li><a href="#">금융소비자보호</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom_sns">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/facebook.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/blog.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/naver.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/twt.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/insta.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
