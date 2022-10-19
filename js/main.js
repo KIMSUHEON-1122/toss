@@ -1,6 +1,42 @@
 // AOS
 
   AOS.init();
+  var x=1;
+  var func1 = setInterval(function(){
+      if(x<26){
+          color1(x);
+          x++;
+      } else if(x<70){
+          color2(x);
+          x++;
+      } else if(x<101){
+          color3(x);
+          x++;
+      } else {
+          x = 1;
+      }
+  },15);
+
+
+
+function color1(x){
+  $(".pie-chart").css({
+      "background":"conic-gradient(#0099ff 0% "+x+"%, #ffffff "+x+"% 100%)"
+      });
+  
+}
+function color2(x){
+  $(".pie-chart").css({
+      "background":"conic-gradient(#0099ff 0% 25%, #f582c6 25% "+x+"%, #ffffff "+x+"% 100%)"
+      });
+   
+}
+function color3(x){
+  $(".pie-chart").css({
+      "background":"conic-gradient(#0099ff 0% 25%, #f582c6 25% 70%, #00cdcd 70% "+x+"%, #ffffff "+x+"% 100%)"
+      });
+   
+}
 
 //스크롤 애니메이션
 $(window).on('load resize', function() { 		
@@ -205,40 +241,4 @@ $(window).on('load resize', function() {
     // resize될때마다 reload되는 방법
 }); */
 
-    var x=1;
-    var func1 = setInterval(function(){
-        if(x<26){
-            color1(x);
-            x++;
-        } else if(x<70){
-            color2(x);
-            x++;
-        } else if(x<101){
-            color3(x);
-            x++;
-        } else {
-            x = 1;
-        }
-    },15);
-
-
-
-function color1(x){
-    $(".pie-chart").css({
-        "background":"conic-gradient(#0099ff 0% "+x+"%, #ffffff "+x+"% 100%)"
-        });
-    
-}
-function color2(x){
-    $(".pie-chart").css({
-        "background":"conic-gradient(#0099ff 0% 25%, #f582c6 25% "+x+"%, #ffffff "+x+"% 100%)"
-        });
-     
-}
-function color3(x){
-    $(".pie-chart").css({
-        "background":"conic-gradient(#0099ff 0% 25%, #f582c6 25% 70%, #00cdcd 70% "+x+"%, #ffffff "+x+"% 100%)"
-        });
-     
-}
-
+   
