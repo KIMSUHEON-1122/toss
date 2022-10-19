@@ -112,7 +112,7 @@ setInterval(function () {
 let remitText = document.querySelector(".remit a").innerText;
 
 $(".remit a").hover(function(){
-    $(this).stop().text("계좌 연결하고, 무료로 송금하기");
+    $(this).stop().text("지금 토스계좌 만들기");
 }, function(){
     $(this).stop().text(remitText);
 });
@@ -134,6 +134,7 @@ $(".heart").on("click", function(){
 
 // 토스 pick slide
 $(".pick_wrap").slick({
+ 
     infinite: true, //무한반복
     slidesToShow: 4, //한 화면에 보여질 컨텐츠
     slidesToScroll: 1, //스크롤 한번에 움직일
@@ -240,3 +241,4 @@ function color3(x){
         });
      
 }
+
