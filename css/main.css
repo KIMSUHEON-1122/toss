@@ -6,6 +6,54 @@ body{
     font-weight: 300;
     position: relative;
     overflow-x: hidden;
+    background-color: #f9fafb;
+}
+.go_to_down{
+    position: fixed;
+    display: block;
+    width: 70px;
+    height: 70px;
+    bottom: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 0;
+    z-index: 9999;
+}
+.go_to_down_inner{
+    display: block;
+    position: relative;
+    height: 100%;
+}
+.go_to_down_inner::before, .go_to_down_inner::after{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    border: 4px solid rgba(151, 151, 151, 0.5);
+    border-top: transparent;
+    border-left: transparent;
+    height: 35px;
+    width:  35px;
+    margin-left: 17.5px;
+    transform: rotate(45deg);
+    animation-name: lookup_ani;
+    animation-iteration-count: infinite;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in;
+    box-sizing: border-box;
+}
+.go_to_down_inner::before{
+    margin-top: 15px;
+}
+.go_to_down_inner::after{
+    animation-delay: 0.3s;
+}
+@keyframes lookup_ani {
+    0%{
+        border-color: white;
+    }
+    100%{
+        border-color: rgb(151, 151, 151 0.5);
+    }
 }
 .logo span{
     font-family: 'Poppins', sans-serif;
@@ -123,6 +171,7 @@ main{
     left: 0;
     width: 100%;
     z-index: 10;
+    border-bottom: 1px solid #e2e2e2;
 }
 .download_wrap{
 
@@ -354,6 +403,7 @@ main{
     align-items: center;
     justify-content: center;
     position: relative;
+    background-color: white;
 }
 .section1_boxcont_inner::after{
     position: absolute;
@@ -362,22 +412,24 @@ main{
     width: 100%;
     height: 100%;
     background-color: #000000be;
-    border-radius: 32px;
+    border-radius: 16px;
     color: white;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-    padding-top: calc(50% - 10px);
     box-sizing: border-box;
     opacity: 0;
+    /* border: 1px solid red; */
+    line-height: 300px;
 }
-.section1 .section1_boxcont_inner:nth-child(1)::after{
+.asset_wrap .section1_boxcont_inner:nth-child(1)::after{
     content: "지금 계좌 연결하고 자산 보기";
 }
-.section1 .section1_boxcont_inner:nth-child(2)::after{
+.consume_wrap .section1_boxcont_inner:nth-child(1)::after{
     content: "이번달 소비 분석하기";
 
-}.section1 .section1_boxcont_inner:nth-child(3)::after{
+}
+.credit_wrap .section1_boxcont_inner:nth-child(1)::after{
     content: "지금 신용점수 올리기";
 
 }

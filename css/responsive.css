@@ -12,6 +12,9 @@
     .card_list_wrap{
         width: 100%;
     }
+    .go_to_down{
+        display: none;
+    }
     main{
         margin-top: 70px;
     }
@@ -204,6 +207,9 @@
         transform: rotate(45deg);
     }
     .qr{
+        display: none;
+    }
+    .first_popup{
         display: none;
     }
     
@@ -516,6 +522,7 @@
     .chatbot span{
         font-size: 0;
     }
+    
     
 }
 
